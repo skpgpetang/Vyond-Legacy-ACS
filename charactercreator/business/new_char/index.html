@@ -873,10 +873,10 @@ if (self !== top) {
 <div id="ccbrowser-container" align="center"><object data="https://owenthegoanimator.github.io/Original-GA-Cloudfront/GoAnimate-Assets/animation/414827163ad4eb60/cc.swf" type="application/x-shockwave-flash" id="cc" width="960" height="725"><param name="align" value="middle"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="wmode" value="transparent"><param name="flashvars" value="apiserver=https%3A%2F%2Fgoanimatewrapper-europe.herokuapp.com%2F&amp;isEmbed=0&amp;ctc=go&amp;tlang=en_US&amp;storePath=https%3A%2F%2Fowenthegoanimator.github.io%2FOriginal-GA-Cloudfront%2FGoAnimate-Assets%2Fstore%2F3a981f5cb2739137%2F%3Cstore%3E&amp;clientThemePath=https%3A%2F%2Fowenthegoanimator.github.io%2FOriginal-GA-Cloudfront%2FGoAnimate-Assets%2Fstatic%2Fad44370a650793d9%2F%3Cclient_theme%3E&amp;appCode=go&amp;siteId=school&amp;st=&amp;userId=0DyHqK6Yj9dM&amp;ut=23&amp;uisa=0&amp;themeId=business&amp;u_info_school=OjI6d1lZakM3SVUxak5YVU9rQWlueURFZ3ZTT1EwakFJYjczcGVCMzJTMiszcFYzVERQRDByQktlUElUTDlaeUdsSzJyRTZFZldHMVRXR1BtOTNwWm5vS2JscTFXTzVodndrVnpaRG9XNVppRU9pSnRpR3pnSEljPQ%3D%3D"><param name="movie" value="https://owenthegoanimator.github.io/Original-GA-Cloudfront/GoAnimate-Assets/animation/414827163ad4eb60/cc.swf"></object></div>
 
 <script>
-jQuery('#ccbrowser-container').flash({
-    id: "cc",
-    swf: "https://owenthegoanimator.github.io/Original-GA-Cloudfront/GoAnimate-Assets/animation/414827163ad4eb60/cc.swf",
-    height: 725,
+jQuery('#char_creator_client').flash({
+    id: "char_creator",
+    swf: "https://ga.vyond.com/static/animation/cc.swf",
+    height: 600,
     width: 960,
 
     align: "middle",
@@ -886,8 +886,21 @@ jQuery('#ccbrowser-container').flash({
 
     hasVersion: "10.3",
 
-    flashvars: {"apiserver":"https:\/\/goanimatewrapper-europe.herokuapp.com\/","isEmbed":"0","ctc":"go","tlang":"en_US","storePath":"https:\/\/owenthegoanimator.github.io\/Original-GA-Cloudfront\/GoAnimate-Assets\/store\/3a981f5cb2739137\/<store>","clientThemePath":"https:\/\/owenthegoanimator.github.io\/Original-GA-Cloudfront\/GoAnimate-Assets\/static\/ad44370a650793d9\/<client_theme>","appCode":"go","siteId":"school","st":"","userId":"0DyHqK6Yj9dM","ut":23,"uisa":0,"themeId":"business","u_info_school":"OjI6d1lZakM3SVUxak5YVU9rQWlueURFZ3ZTT1EwakFJYjczcGVCMzJTMiszcFYzVERQRDByQktlUElUTDlaeUdsSzJyRTZFZldHMVRXR1BtOTNwWm5vS2JscTFXTzVodndrVnpaRG9XNVppRU9pSnRpR3pnSEljPQ=="}});
+    flashvars: {"apiserver":"https:\/\/vyondlegacyacsapi.herokuapp.com\/","m_mode":"school","isLogin":"Y","isEmbed":"0","ctc":"go","tlang":"en_US","storePath":"https:\/\/ga.vyond.com\/static\/store\/<store>","clientThemePath":"https:\/\/ga.vyond.com\/static\/<client_theme>","appCode":"go","page":"","siteId":"school","userId":"0DyHqK6Yj9dM","themeId":"business","ut":23,"ft":"_sticky_filter_guy"}});
+
+function goSubscribe()
+{
+    var url = '/business/videoplans?hook=cc.site';
+    window.open(url, 'goSubscribe');
+}
+
+function characterSaved()
+{
+    SetCookie('cc_saved', '1', 1, '/');
+    window.location = '../';
+}
 </script>
+    
 </div>
 
 <script>
